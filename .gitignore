@@ -1,0 +1,4 @@
+local_settings.py
+focal_backend/__pycache__/
+focal/__pycache__/
+venv
