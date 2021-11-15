@@ -1,0 +1,8 @@
+{% extends 'focal/base.html' %}
+{% block content %}
+<form action="{% url 'focal:new_mission' %}" method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <button name="submit">Add Mission</button>
+</form>
+{% endblock content %}
