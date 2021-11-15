@@ -3,6 +3,6 @@
 <form action="{% url 'focal:new_mission' %}" method="post">
     {% csrf_token %}
     {{ form.as_p }}
-    <button name="submit">Add Mission</button>
+    <button name="add">Add Mission</button>
 </form>
 {% endblock content %}

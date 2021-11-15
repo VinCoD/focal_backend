@@ -4,8 +4,8 @@
     <ul>
         {% for mission in missions %}
          <li>{{ mission }}</li>
-         <p>{{ mission.title }}</p>
          <p>{{ mission.content }}</p>
+         <p>{{mission.date_added}}</p>
         {% endfor %}
     </ul>
     <p><a href="{% url 'focal:new_mission' %}">Add New Mission</a></p>
