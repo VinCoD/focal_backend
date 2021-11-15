@@ -5,4 +5,5 @@ app_name = 'focal'
 
 urlpatterns = [
     path('', views.home, name='home'),
+    path('missions', views.missions, name='missions' ),
 ]

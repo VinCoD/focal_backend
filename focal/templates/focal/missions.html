@@ -1,0 +1,13 @@
+{% extends 'focal/base.html' %}
+{% block content %}
+<p>
+    <ul>
+        {% for mission in missions %}
+         <li>{{ mission }}</li>
+         <p>{{ mission.title }}</p>
+         <p>{{ mission.content }}</p>
+        {% endfor %}
+    </ul>
+    
+</p>
+{% endblock content %}
